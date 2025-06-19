@@ -1,0 +1,96 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <form id="account" method="post">
+                <h2>Use a local account to log in.</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3 position-relative">
+                    <input asp-for="Input.Password" class="form-control" type="password" id="password" autocomplete="current-password" aria-required="true" placeholder="password" />
+                    <label asp-for="Input.Password" class="form-label">Password</label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    <!-- Eye icon for toggling password visibility -->
+                    <span class="toggle-password" onclick="togglePassword()">
+                        <i class="fa fa-eye" id="toggleEye"></i>
+                    </span>
+                </div>
+                <div class="checkbox mb-3">
+                    <label asp-for="Input.RememberMe" class="form-label">
+                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                    </label>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
+                <div>
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p>
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
+                    <p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <style>
+        .position-relative {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 2;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* Animation for hover effect */
+        .position-relative:hover .toggle-password {
+            animation: eyeMove 1s infinite;
+        }
+        
+      /*   /* Keyframe Animation */
+      
+
+        /* Optional vendor prefixes for cross-browser support */
+       
+    </style>
+}
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var toggleEye = document.getElementById("toggleEye");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleEye.classList.remove("fa-eye");
+                toggleEye.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                toggleEye.classList.remove("fa-eye-slash");
+                toggleEye.classList.add("fa-eye");
+            }
+        }
+    </script> */
+}

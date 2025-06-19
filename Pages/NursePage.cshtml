@@ -1,0 +1,170 @@
+﻿@page
+@model MyHospialoo.Pages.NursePageModel
+
+@{
+    ViewData["Title"] = "NursePage";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>@ViewData["Title"]</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .message-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .message-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .message-item:last-child {
+            border-bottom: none;
+        }
+
+        .message-content {
+            margin-bottom: 10px;
+        }
+
+        .message-details {
+            display: none;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .reply-button {
+            display: inline-block;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .reply-button:hover {
+            background-color: #0056b3;
+        }
+
+        .new-message-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .new-message-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .new-message-button:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="welcome-message">Your Messages</h1>
+
+<div class="message-container">
+	@if (Model.AllMessagesDictionary != null && Model.AllMessagesDictionary.Any())
+	{
+		@foreach (var vKey in Model.AllMessagesDictionary.Keys)
+		{
+			<div class="message-item">
+				<div class="message-content">
+					@foreach (var v in Model.AllMessagesDictionary[vKey])
+					{
+						<p>@v</p>
+						<div class="message-details">
+							<a class="reply-button" asp-page="/CreateMessage" asp-route-replyid="@vKey">Reply</a>
+						</div>
+					}
+				</div>
+				
+			</div>
+		}
+	}
+	else
+	{
+		<p>There are No Messages</p>
+	}
+</div>
+
+<div class="new-message-container">
+	<h3>Send New Message</h3>
+	<a class="new-message-button" asp-page="./CreateMessage" asp-route-replyid="1">Send Message To Doctor</a>
+</div>
+
+<div class="text-center">
+	<a class="back-button" asp-page="./NursePage">Back to List</a>
+</div>
+
+<!-- إضافة jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+        $(document).ready(function() {
+            $('.message-item').click(function() {
+                $(this).find('.message-details').slideToggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
