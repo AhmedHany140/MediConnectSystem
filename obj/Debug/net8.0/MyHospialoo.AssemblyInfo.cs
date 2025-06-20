@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyHospialoo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175651fdf8f3cafd243e4a20212dbbf5d5a3b4be")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyHospialoo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyHospialoo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

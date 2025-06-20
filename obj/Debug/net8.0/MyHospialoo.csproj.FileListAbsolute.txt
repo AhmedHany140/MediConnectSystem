@@ -291,3 +291,4 @@ C:\Users\dell\source\repos\projects\MyHospialoo\bin\Debug\net8.0\MyHospialoo.sta
 C:\Users\dell\source\repos\projects\MyHospialoo\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\dell\source\repos\projects\MyHospialoo\obj\Debug\net8.0\staticwebassets\msbuild.MyHospialoo.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\dell\source\repos\projects\MyHospialoo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\dell\source\repos\projects\MyHospialoo\obj\Debug\net8.0\MyHospialoo.sourcelink.json

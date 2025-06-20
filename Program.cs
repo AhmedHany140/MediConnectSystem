@@ -1,12 +1,18 @@
 using Microsoft.AspNetCore.Identity;
-using Microsoft.CodeAnalysis.Differencing;
 using Microsoft.EntityFrameworkCore;
 using MyHospialoo.Data;
 
 namespace MyHospialoo
 {
+	/// <summary>
+	/// The main entry point for the MyHospialoo application.
+	/// </summary>
 	public class Program
 	{
+		/// <summary>
+		/// Configures and runs the ASP.NET Core Razor Pages application.
+		/// </summary>
+		/// <param name="args">Command-line arguments.</param>
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);

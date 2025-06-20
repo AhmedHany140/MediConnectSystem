@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|c:\\users\\dell\\source\\repos\\projects\\myhospialoo\\areas\\identity\\data\\myhospialoocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|solutionrelative:areas\\identity\\data\\myhospialoocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|c:\\users\\dell\\source\\repos\\projects\\myhospialoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|c:\\users\\dell\\source\\repos\\projects\\myhospialoo\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|c:\\users\\dell\\source\\repos\\projects\\myhospialoo\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|c:\\users\\dell\\source\\repos\\projects\\myhospialoo\\pages\\doctorpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3569C7D-7E1D-4151-B0C3-D14C272FEF24}|MyHospialoo.csproj|solutionrelative:pages\\doctorpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +43,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyHospialooContext.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Areas\\Identity\\Data\\MyHospialooContext.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\MyHospialooContext.cs",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Areas\\Identity\\Data\\MyHospialooContext.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\MyHospialooContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:30:46.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:28:18.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T11:28:01.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T11:27:22.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoctorPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Pages\\DoctorPage.cshtml",
+              "RelativeDocumentMoniker": "Pages\\DoctorPage.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\projects\\MyHospialoo\\Pages\\DoctorPage.cshtml",
+              "RelativeToolTip": "Pages\\DoctorPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T11:26:59.258Z",
+              "EditorCaption": ""
             }
           ]
         }
